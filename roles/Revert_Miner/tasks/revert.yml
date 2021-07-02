@@ -1,0 +1,14 @@
+---
+  - name: revert
+    community.vmware.vmware_guest_snapshot:
+      hostname: "{{ vcenter_hostname }}"
+      username: "{{ vcenter_username }}"
+      password: "{{ vcenter_password }}"
+      validate_certs: "{{ validate_certs_flag }}"
+      datacenter: "{{ vcenter_datacenter }}"
+      folder: "/{{ vcenter_datacenter }}/vm/"
+      name: "{{ VM_Name }}"
+      state: revert
+      snapshot_name: test6
+    delegate_to: localhost
+

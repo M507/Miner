@@ -1,0 +1,58 @@
+
+[*] Running Invoke-AllChecks
+
+
+[*] Checking if user is in a local group with administrative privileges...
+
+
+[*] Checking for unquoted service paths...
+
+
+ServiceName   : Disk Savvy Enterprise
+Path          : C:\Program Files (x86)\Disk Savvy Enterprise\bin\disksvs.exe
+StartName     : LocalSystem
+AbuseFunction : Write-ServiceBinary -ServiceName 'Disk Savvy Enterprise' -Path <HijackPath>
+
+
+
+[*] Checking service executable and argument permissions...
+
+
+[*] Checking service permissions...
+
+
+[*] Checking %PATH% for potentially hijackable .dll locations...
+
+
+HijackablePath : C:\Users\lowprivuser\AppData\Local\Microsoft\WindowsApps\
+AbuseFunction  : Write-HijackDll -OutputFile 
+                 'C:\Users\lowprivuser\AppData\Local\Microsoft\WindowsApps\\wlbsctrl.dll' -Command 
+                 '...'
+
+
+
+
+
+[*] Checking for AlwaysInstallElevated registry key...
+
+
+[*] Checking for Autologon credentials in registry...
+
+
+[*] Checking for vulnerable registry autoruns and configs...
+
+
+[*] Checking for vulnerable schtask files/configs...
+
+
+[*] Checking for unattended install files...
+
+
+[*] Checking for encrypted web.config strings...
+
+
+[*] Checking for encrypted application pool and virtual directory passwords...
+
+
+d e s k t o p - 7 0 r v q r e \ l o w p r i v u s e r  
+ 

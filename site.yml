@@ -1,0 +1,58 @@
+---
+  - name: Kill any old opened RDP session in rdpss VM.
+    hosts: localhost
+    gather_facts: false
+    tasks:
+    - import_tasks: 'roles/notify_RDPSS_off.yml'
+
+  - name: vCenter Tasks
+    hosts: localhost
+    gather_facts: false
+    become: yes
+    vars_files:
+      - vars.yml
+    roles:
+      - Revert_Miner
+
+# The {{ run_version }} in _{{ run_version }}_ is either "main" or "main_keys"
+
+  - name: Preparing the local files. {{ run_version }} was picked for this run.
+    hosts: localhost
+    gather_facts: false
+    tasks:
+    - import_tasks: 'roles/local/overwrite.yml'
+
+  - name: Preparing Windows test environment
+    hosts: windowstesting
+    gather_facts: false
+    tasks:
+      # - import_tasks: 'roles/uninstall.yml'
+      - import_tasks: 'roles/push.yml'
+      - import_tasks: 'roles/install.yml'
+      # If you don't have it already
+      # - import_tasks: 'roles/install_pip_requirements.yml'
+      - import_tasks: 'roles/push_executable.yml'
+      
+
+  - name: Notify Windows Main to start an RDP session
+    hosts: localhost
+    gather_facts: false
+    tasks:
+    - import_tasks: 'roles/notify_RDPSS_on.yml'
+
+
+  - name: Preparing Windows test environment
+    hosts: windowstesting
+    gather_facts: false
+    tasks:
+      - import_tasks: 'roles/run_startinstallingexe.yml'
+      - import_tasks: 'roles/run_startauditing.yml'
+      - import_tasks: 'roles/pull.yml'
+
+
+  - name: Notify Windows Main to stop the opened RDP session
+    hosts: localhost
+    gather_facts: false
+    tasks:
+    - import_tasks: 'roles/notify_RDPSS_off.yml'
+

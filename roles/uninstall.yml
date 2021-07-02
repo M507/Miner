@@ -1,0 +1,24 @@
+---
+
+- name: Remove all old data from Miner
+  win_shell: Remove-Item C:\Miner\ -Recurse
+  failed_when: false
+  # ignore_errors: yes
+
+- name: Remove startinstallingexe service
+  win_nssm:
+    name: startinstallingexe
+    state: absent
+
+
+- name: Remove startauditing service
+  win_nssm:
+    name: startauditing
+    state: absent
+
+
+- name: Remove startpython service
+  win_nssm:
+    name: startpython
+    state: absent
+

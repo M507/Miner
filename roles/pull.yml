@@ -1,0 +1,34 @@
+# the {{ run_version }} in _{{ run_version }}_ is either "main" or "main_keys"
+
+- name: Pause for 1 minutes to finish auditing.
+  pause:
+    minutes: 1
+
+- name: Rename the checks file.
+  win_shell: 'Copy-Item C:\Miner\checks.txt C:\Miner\checks_{{ run_version }}_{{ file_name }}.txt'
+
+
+- name: Fetch the checks file.
+  fetch:
+    src: 'C:\Miner\checks_{{ run_version }}_{{ file_name }}.txt'
+    dest: ./reports/{{ run_version }}_{{ file_name }}
+
+
+- name: Rename the unique screenshot.
+  win_shell: 'Copy-Item C:\Miner\screenshots\* C:\Miner\screenshots\screenshot_{{ run_version }}_{{ file_name }}.png'
+
+
+- name: Copy the unique screenshot file for future improvements.
+  fetch:
+    src: 'C:\Miner\screenshots\screenshot_{{ run_version }}_{{ file_name }}.png'
+    dest: ./reports/{{ run_version }}_{{ file_name }}/
+
+
+- name: Rename the showalltcplisteningports.txt file.
+  win_shell: 'Copy-Item C:\Miner\showalltcplisteningports.txt C:\Miner\showalltcplisteningports_{{ run_version }}_{{ file_name }}.txt'
+
+
+- name: Fetch the showalltcplisteningports.txt file.
+  fetch:
+    src: 'C:\Miner\showalltcplisteningports_{{ run_version }}_{{ file_name }}.txt'
+    dest: ./reports/{{ run_version }}_{{ file_name }}

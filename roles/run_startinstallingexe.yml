@@ -1,0 +1,9 @@
+---
+
+
+- name: Execute start.ps1 to start installing the targeted exe file
+  win_shell: 'Restart-Service startinstallingexe'
+
+
+- name: Execute python installer.py using startpython
+  win_shell: 'Restart-Service startpython'

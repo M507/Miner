@@ -1,0 +1,3 @@
+PyGithub
+bs4
+python-dotenv

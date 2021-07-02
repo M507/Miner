@@ -1,0 +1,4 @@
+# This role must 
+
+- name: Notify to close the session.
+  script: /home/admin/Miner/RDPSS/rdpss_switch.sh

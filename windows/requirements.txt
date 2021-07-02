@@ -1,0 +1,16 @@
+image-slicer==2.1.1
+MouseInfo==0.1.3
+numpy==1.19.4
+opencv-python==4.4.0.46
+Pillow==7.2.0
+psutil==5.7.3
+PyAutoGUI==0.9.52
+PyGetWindow==0.0.9
+PyMsgBox==1.0.9
+pyperclip==1.8.1
+PyRect==0.1.4
+PyScreeze==0.1.26
+pytesseract==0.3.6
+PyTweening==1.0.3
+pywin32==300
+WMI==1.5.1

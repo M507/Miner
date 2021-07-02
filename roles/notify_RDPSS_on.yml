@@ -1,0 +1,4 @@
+# This role must 
+
+- name: Notify to start a new RDP session.
+  script: /home/admin/Miner/RDPSS/rdpss_switch.sh 1

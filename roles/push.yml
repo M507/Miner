@@ -1,0 +1,60 @@
+- name: Creating Miner Directory
+  win_file:
+    path: 'C:\Miner\'
+    state: directory
+
+
+- name: Pushing PowerUp.ps1
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Miner\'
+  with_fileglob:
+    - "files/PowerUp.ps1"
+
+
+- name: Pushing show_all_tcp_listening_ports.ps1
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Miner\'
+  with_fileglob:
+    - "files/show_all_tcp_listening_ports.ps1"
+
+# The role depends on roles/local/overwrite.yml
+
+- name: Pushing startpython.ps1
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Miner\'
+  with_fileglob:
+    - "files/startpython.ps1"
+
+
+- name: Pushing PsExec.exe
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Windows\System32\'
+  with_fileglob:
+    - "files/PsExec.exe"
+
+
+
+- name: Pushing all python files
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Miner\'
+  with_fileglob:
+    - "windows/*"
+
+
+- name: Creating samples Directory
+  win_file:
+    path: 'C:\Miner\samples'
+    state: directory
+
+
+- name: Pushing samples
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Miner\samples\'
+  with_fileglob:
+    - "windows/samples/*"

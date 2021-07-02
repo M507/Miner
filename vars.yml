@@ -1,0 +1,11 @@
+
+vcenter_hostname: 192.168.1.1
+vcenter_username: admin@vsphere.local
+vcenter_password: YeshDeshIsMypashhhhword
+# vCenter Datacenter.
+vcenter_datacenter: Datacenter
+# vCenter Datastore, where you want to store new clones. 
+vcenter_datastores: [ datastore1 ]
+validate_certs_flag: False
+# The name of the VM you will be cloning in each new analysis.
+VM_Name: Win10 RedTeam Testing

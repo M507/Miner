@@ -1,0 +1,14 @@
+---
+
+- name: Pause for 2 minutes to install {{ file_name }}
+  pause:
+    minutes: 2
+
+
+- name: Execute PowerUp.ps1
+  win_shell: 'Restart-Service startauditing'
+
+
+- name: Execute show_all_tcp_listening_ports.ps1
+  win_shell: 'Restart-Service showalltcplisteningports'
+

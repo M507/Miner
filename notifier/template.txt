@@ -1,0 +1,18 @@
+FILE_NAME_IS_HERE
+
+# Exploit Title: SERVCIE_NAME_HEHE - 'BIN_IS_HERE' Unquoted Service Path
+# Date: DDD
+# Exploit Author: Mohammed Alshehri
+# Vendor Homepage: WWW
+# Software Link:  SSS
+# Version: Version VVV
+# Tested on: Microsoft Windows Server 2019 Standard 10.0.17763 N/A Build 17763
+
+# Service info:
+
+RESULTS
+
+
+# Exploit:
+This vulnerability could permit executing code during startup or reboot with the escalated privileges.
+

@@ -1,0 +1,4 @@
+
+
+- name: Copy files/startpython_{{ run_version }}.ps1 to files/startpython.ps1
+  shell: \cp files/startpython_{{ run_version }}.ps1 files/startpython.ps1

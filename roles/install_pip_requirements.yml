@@ -1,0 +1,5 @@
+---
+
+
+- name: Install pip requirements
+  win_shell: pip install -r C:\Miner\requirements.txt

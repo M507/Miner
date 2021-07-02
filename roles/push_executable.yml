@@ -1,0 +1,13 @@
+
+- name: Copying an executeable
+  win_copy:
+    src: "{{ item }}"
+    dest: 'C:\Miner\'
+  with_fileglob:
+    - "queue/{{file_name}}"
+
+
+- name: Writing start.ps1
+  win_shell: |
+    echo "C:\Windows\System32\PsExec.exe -accepteula -i 2 C:\Miner\{{file_name}}
+    sleep 2147480;" > C:\Miner\start.ps1

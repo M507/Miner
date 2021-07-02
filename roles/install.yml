@@ -1,0 +1,47 @@
+---
+
+- name: Install startinstallingexe service
+  win_shell: |
+      $nssm = (Get-Command nssm).Source
+      $serviceName = 'startinstallingexe'
+      $powershell = (Get-Command powershell).Source
+      $scriptPath = 'C:\Miner\start.ps1'
+      $arguments = '-ExecutionPolicy Bypass -File "{0}"' -f $scriptPath
+      & $nssm install $serviceName $powershell $arguments
+      & $nssm status $serviceName
+
+
+- name: Install startauditing service
+  win_shell: |
+      $nssm = (Get-Command nssm).Source
+      $serviceName = 'startauditing'
+      $powershell = (Get-Command powershell).Source
+      $scriptPath = 'C:\Miner\PowerUp.ps1'
+      $arguments = '-ExecutionPolicy Bypass -File "{0}"' -f $scriptPath
+      & $nssm install $serviceName $powershell $arguments
+      & $nssm status $serviceName
+
+
+- name: Install startpython service
+  win_shell: |
+      $nssm = (Get-Command nssm).Source
+      $serviceName = 'startpython'
+      $powershell = (Get-Command powershell).Source
+      $scriptPath = 'C:\Miner\startpython.ps1'
+      $arguments = '-ExecutionPolicy Bypass -File "{0}"' -f $scriptPath
+      & $nssm install $serviceName $powershell $arguments
+      & $nssm status $serviceName
+
+
+
+- name: Install showalltcplisteningports service
+  win_shell: |
+      $nssm = (Get-Command nssm).Source
+      $serviceName = 'showalltcplisteningports'
+      $powershell = (Get-Command powershell).Source
+      $scriptPath = 'C:\Miner\show_all_tcp_listening_ports.ps1'
+      $arguments = '-ExecutionPolicy Bypass -File "{0}"' -f $scriptPath
+      & $nssm install $serviceName $powershell $arguments
+      & $nssm status $serviceName
+
+
