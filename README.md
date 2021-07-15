@@ -5,6 +5,10 @@ LINK
 
 ## Vulnerabilities found using Miner:
 
+- `CVE-2021-21292`
+
+- `CVE-2020-15261`
+
 Program Access Controller v1.2.0.0 
 - https://www.exploit-db.com/exploits/48966 
 - https://exchange.xforce.ibmcloud.com/vulnerabilities/190825 
