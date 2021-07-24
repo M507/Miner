@@ -9039,3 +9039,4 @@ RenderManagerOpenGLPresentExample.exe
 RenderManagerOpenGLPresentSideBySideExample.exe
 RenderManagerOpenGLSharedContextExample.exe
 repc.exe
+repc.exe

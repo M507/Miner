@@ -1,7 +1,7 @@
 # Miner
 
 ## Read more about Miner:
-LINK
+[LINK](https://shellcode.blog/Miner00/)
 
 ## Vulnerabilities found using Miner:
 

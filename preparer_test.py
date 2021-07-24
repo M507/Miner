@@ -69,8 +69,4 @@ def check_if_tested_before(file_name):
     return file_name in files
 
 
-
-
-
 append_to_file('completed/completed.txt','line')
-

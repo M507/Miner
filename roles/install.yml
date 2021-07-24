@@ -44,4 +44,3 @@
       & $nssm install $serviceName $powershell $arguments
       & $nssm status $serviceName
 
-

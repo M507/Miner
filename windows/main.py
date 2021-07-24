@@ -396,13 +396,6 @@ def take_a_screenshot():
         except:
             pass
 
-    # for window_name in setup_list:
-    #     proc = get_setup_title_using_Win32_Process(window_name)
-    #     if proc is not None:
-    #         break
-    # if proc is not None:
-    #     im = screenshot_by_pid(proc.ProcessId)
-    #     return im
 
     return None
 

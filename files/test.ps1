@@ -1,1 +1,0 @@
-Invoke-command -ScriptBlock { & cmd /c 'C:\Miner\privacy-drive-setup.exe'}

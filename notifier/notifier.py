@@ -1,6 +1,5 @@
 import os, hashlib, re
 from dotenv import load_dotenv
-
 load_dotenv()
 VULNSCANNERS_WEBHOOK = os.environ.get('VULNSCANNERS')
 REPORTS_DIR= '../reports/'

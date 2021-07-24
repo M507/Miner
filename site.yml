@@ -55,4 +55,3 @@
     gather_facts: false
     tasks:
     - import_tasks: 'roles/notify_RDPSS_off.yml'
-

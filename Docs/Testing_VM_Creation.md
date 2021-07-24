@@ -1,6 +1,3 @@
-
-
-
 ### Create a new user without any admin privs.
 ```powershell
 net user lowprivuser /add
