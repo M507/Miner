@@ -6,8 +6,10 @@
 ## Vulnerabilities found using Miner:
 
 - `CVE-2021-21292`
-
 - `CVE-2020-15261`
+- `CVE-2020-27503` 
+- `CVE-2020-27504`
+- `CVE-2020-27505`
 
 Program Access Controller v1.2.0.0 
 - https://www.exploit-db.com/exploits/48966 
