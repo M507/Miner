@@ -7,11 +7,8 @@
 
 - `CVE-2021-21292`
 - `CVE-2020-15261`
-- `CVE-2020-27503` 
-- `CVE-2020-27504`
-- `CVE-2020-27505`
 
-Program Access Controller v1.2.0.0 
+Program Access Controller v1.2.0.0 (CVE-2020-27504)
 - https://www.exploit-db.com/exploits/48966 
 - https://exchange.xforce.ibmcloud.com/vulnerabilities/190825 
 
@@ -19,7 +16,7 @@ DiskBoss v11.7.28
 - https://www.exploit-db.com/exploits/49022 
 - https://exchange.xforce.ibmcloud.com/vulnerabilities/191386 
 
-IP Watcher v3.0.0.30 
+IP Watcher v3.0.0.30 (CVE-2020-27503)
 - https://www.exploit-db.com/exploits/48968 
 - https://exchange.xforce.ibmcloud.com/vulnerabilities/190824
 
@@ -56,7 +53,7 @@ System Explorer 7.0.0
 - https://www.exploit-db.com/exploits/49248 
 - https://exchange.xforce.ibmcloud.com/vulnerabilities/193324 
 
-Privacy Drive v3.17.0 
+Privacy Drive v3.17.0 (CVE-2020-27505)
 - https://www.exploit-db.com/exploits/49023 
 - https://exchange.xforce.ibmcloud.com/vulnerabilities/191387 
 
