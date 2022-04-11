@@ -45,7 +45,7 @@ Rumble Mail Server 0.51.3135 (CVE-2021-43456)
 
 System Explorer 7.0.0 (CVE-2021-43460)
 - https://www.exploit-db.com/exploits/49248 
-- https://exchangehttps://exchange.xforce.ibmcloud.com/vulnerabilities/190482.xforce.ibmcloud.com/vulnerabilities/193324 
+- https://exchange.xforce.ibmcloud.com/vulnerabilities/193324
 
 AnyTXT Searcher 1.2.394 (CVE-2021-43454)
 - https://www.exploit-db.com/exploits/49549
